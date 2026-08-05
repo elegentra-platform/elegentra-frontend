@@ -70,12 +70,14 @@ window.setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classL
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden','false');
     document.body.style.overflow='hidden';
+    document.body.classList.add('preview-open');
     close.focus({preventScroll:true});
   }
   function closeGallery(){
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden','true');
     document.body.style.overflow='';
+    document.body.classList.remove('preview-open');
   }
   stack.addEventListener('click',event=>{
     const card=event.target.closest('.stack-card');
@@ -100,5 +102,6 @@ window.setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classL
     if(delta<0)show(index+1); else show(index-1);
   },{passive:true});
 })();
+
 
 
