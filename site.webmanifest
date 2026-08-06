@@ -9,10 +9,10 @@
   "theme_color": "#f7f0ea",
   "icons": [
     {
-      "src": "/assets/icons/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "/assets/images/favion.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
