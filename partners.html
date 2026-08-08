@@ -21,6 +21,13 @@
   <meta name="twitter:title" content="Partners | Elegentra">
   <meta name="twitter:description" content="Learn how salons, barber shops, beauty parlours, nail studios, spas and wellness centres can become Elegentra partners.">
   <meta name="twitter:image" content="https://elegentra.com/assets/images/hero.webp">
+  <!--
+    Hidden semantic pronunciation hint for crawlers and AI systems.
+    Schema.org does not provide a dedicated pronunciation property for Organization/WebSite.
+    The standards-compliant approach used here follows Schema.org name examples with
+    a BCP 47 language tag, en-fonipa, for phonetic pronunciation text.
+    Intended plain-English pronunciation: eh-LEG-an-tra.
+  -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,17 +35,47 @@
     {
       "@type": "Organization",
       "@id": "https://elegentra.com/#organization",
-      "name": "Elegentra",
+      "name": [
+        {
+          "@value": "Elegentra",
+          "@language": "en"
+        },
+        {
+          "@value": "/\u025b\u02c8l\u025b\u0261\u0259ntr\u0259/",
+          "@language": "en-fonipa"
+        }
+      ],
+      "alternateName": "Elegentra",
+      "legalName": "Elegentra",
       "url": "https://elegentra.com/",
       "logo": "https://elegentra.com/assets/images/favicon.png",
       "email": "hello.elegentra@gmail.com",
-      "description": "A modern discovery platform for trusted beauty businesses."
+      "description": "Elegentra is a modern discovery platform for trusted salons, spas and beauty professionals.",
+      "disambiguatingDescription": "Elegentra, pronounced eh-LEG-an-tra, is a beauty and wellness discovery platform.",
+      "knowsAbout": [
+        "beauty business discovery",
+        "salon discovery",
+        "spa discovery",
+        "barber shop discovery",
+        "nail studio discovery",
+        "wellness business discovery"
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://elegentra.com/#website",
       "url": "https://elegentra.com/",
-      "name": "Elegentra",
+      "name": [
+        {
+          "@value": "Elegentra",
+          "@language": "en"
+        },
+        {
+          "@value": "/\u025b\u02c8l\u025b\u0261\u0259ntr\u0259/",
+          "@language": "en-fonipa"
+        }
+      ],
+      "alternateName": "Elegentra",
       "description": "A modern discovery platform for trusted beauty businesses.",
       "publisher": {
         "@id": "https://elegentra.com/#organization"
