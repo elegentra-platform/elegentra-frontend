@@ -105,3 +105,23 @@ window.setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classL
 
 
 
+
+
+(function(){
+  const detailsItems=[...document.querySelectorAll('.faq-list details')];
+  if(!detailsItems.length)return;
+  detailsItems.forEach(details=>{
+    if(details.classList.contains('faq-enhanced'))return;
+    const summary=details.querySelector('summary');
+    const nodes=[...details.children].filter(child=>child.tagName&&child.tagName.toLowerCase()!=='summary');
+    if(!summary||!nodes.length)return;
+    const content=document.createElement('div');
+    content.className='faq-content';
+    const inner=document.createElement('div');
+    inner.className='faq-content-inner';
+    nodes.forEach(node=>inner.appendChild(node));
+    content.appendChild(inner);
+    details.appendChild(content);
+    details.classList.add('faq-enhanced');
+  });
+})();
